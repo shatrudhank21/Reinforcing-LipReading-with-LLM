@@ -43,7 +43,7 @@ def load_data(path: str):
     path = bytes.decode(path.numpy())
     # File name splitting for windows
     
-    file_name = path.split('/')[-1].split('.')[0]
+    file_name = path.split('\\')[-1].split('.')[0]
     test_videos_path = os.path.join('data','test_videos',f'{file_name}.mpg')
     annotations_path = os.path.join('data','annotations',f'{file_name}.align')
     
