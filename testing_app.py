@@ -52,7 +52,8 @@ if options:
     with col2: 
         video, annotations = load_data(tf.convert_to_tensor(file_path))
 
-
+        st.info("This is the Original Label.")
+        st.text(annotations)
         st.info("This is what the Lip Reading Model Predicted.")
         
         model = load_model()
