@@ -7,3 +7,4 @@ tensorflow==2.15.0
 openai
 transformers
 sentencepiece
+opencv-python-headless
