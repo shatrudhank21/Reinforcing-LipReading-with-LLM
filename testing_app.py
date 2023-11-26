@@ -28,6 +28,9 @@ st.set_page_config(layout='wide')
 with st.sidebar: 
     st.title('Infusing Lip Reading with an LLM')
     st.info("It's important to note that the application's true potential for robustness remains untapped. Given better resources and an extended training duration, the model could evolve significantly. Unfortunately, due to resource constraints, the training period was limited, hindering the model's full development. By expanding the dataset and prolonging the training duration, I firmly believe this Lip Reading application can overcome its current limitations. I couldn't allocate more resources for its training, but I envision a future where this tool evolves into a robust, versatile, and widely applicable solution.")
+    st.write("The credit for utils file which contains the data loading functions goes to Nicolas Renotte.") 
+    st.write("You can check this out here: https://github.com/nicknochnack/LipNet/blob/main/app/utils.py")
+    
     
 st.title('LipNet App with Llama') 
 # Generating a list of options or videos 
