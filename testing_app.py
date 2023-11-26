@@ -42,10 +42,10 @@ if options:
     # Rendering the video  
     with col1: 
         file_path = os.path.join('data', 'test_videos', selected_video)
-        os.system(f'ffmpeg -i {file_path} -vcodec libx264 test_video.mp4 -y')  ##optional if the format is in some other format than 'mp4'.
+        os.system(f'ffmpeg -i {file_path} -vcodec libx264 test/{selected_video}.mp4 -y')  ##optional if the format is in some other format than 'mp4'.
 
         # Render the video
-        video = open('test_video.mp4', 'rb') 
+        video = open(f'test/{selected_video}.mp4', 'rb') 
         video_bytes = video.read() 
         st.video(video_bytes)
 
